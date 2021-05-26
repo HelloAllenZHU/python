@@ -36,10 +36,15 @@ df = pro.stock_basic( exchange='',
 '''
 
 # 查询当前所有正常上市交易的股票列表
+'''
 df = pro.query( 'stock_basic', 
                 exchange='', 
                 list_status='L', 
                 fields='ts_code,symbol,name,area,industry,list_date'
               )
-              
+'''              
+
+# 获取某只股票指定日期内的基本数据(不包含换手率)
+df = pro.daily(ts_code='601789.SH', start_date='20210501', end_date='20210526')
+
 print( df )
