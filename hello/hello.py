@@ -1,6 +1,16 @@
 #!/usr/bin/python3
 
 import tushare as ts
+import pandas as pd
+
+#显示所有列
+pd.set_option('display.max_columns', None)
+
+#显示所有行
+pd.set_option('display.max_rows', None)
+
+#设置value的显示长度为1000，默认为50
+pd.set_option('max_colwidth',1000)
 
 # 打印tushare版本信息
 print(ts.__version__)
@@ -45,6 +55,6 @@ df = pro.query( 'stock_basic',
 '''              
 
 # 获取某只股票指定日期内的基本数据(不包含换手率)
-df = pro.daily(ts_code='601789.SH', start_date='20210501', end_date='20210526')
+df = pro.daily(ts_code='002174.SZ', start_date='20210524', end_date='20210527')
 
 print( df )
