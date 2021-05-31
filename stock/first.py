@@ -57,4 +57,16 @@ df = pro.query( 'stock_basic',
 # 获取某只股票指定日期内的基本数据(不包含换手率)
 df = pro.daily(ts_code='002174.SZ', start_date='20210524', end_date='20210527')
 
+
+#查询当前所有正常上市交易的股票列表
+#df = pro.stock_basic( exchange='', list_status='L', fields='ts_code,symbol,name,area,industry,list_date' )
+
+#获取日线基本行情
+#df = pro.daily( ts_code='600926.SH', start_date='20210319', end_date='20210319' )
+
+#获取通用数据
+#df = ts.pro_bar( ts_code='600926.SH', adj='None', start_date='20210319', end_date='20210319', factors=['tor', 'vr'])
+
+#df = ts.pro_bar(ts_code='000001.SZ', start_date='20180101', end_date='20181011', factors=['tor', 'vr'])
+
 print( df )
