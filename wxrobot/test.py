@@ -17,6 +17,7 @@ def print_content(msg):
     return get_response(msg['Text'])
 
 #处理群聊文字消息
+'''
 @itchat.msg_register( itchat.content.TEXT, isGroupChat = True )
 def text_reply_group( msg ):
 	if ( msg.content.find( '888' ) != -1 ):
@@ -28,8 +29,8 @@ def text_reply_group( msg ):
 '''
 @itchat.msg_register(itchat.content.TEXT)
 def proc_msg(msg):
-	return u'您好！主人暂时离开，稍后会给您回复...(本消息来自聊天机器人)
-'''
+	return u'您好！主人暂时离开，稍后会给您回复...(本消息来自聊天机器人)'
+
 
 itchat.auto_login(True)
 itchat.run()
