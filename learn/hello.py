@@ -159,10 +159,36 @@
 # a = 0
 
 # try:
-#     a = 0
+#     print( 5 / a )
 # except:
 #     print( "exception" )
 # else:
 #     print( "something else." )
 
+#######################################module
+# # xxx.py
+# def funcA():
+#     print( "Hello world" )
+
+# # yyy.py
+# import xxx
+
+# xxx.funcA()
+
+# import xxx as x
+
+# x.funcA()
+
+# from xxx import funcA
+
+# xxx.funcA()
+
+# from xxx import funcA as A
+
+# xxx.A()
+
 #######################################http
+import requests
+
+res = requests.get( "https://www.baidu.com" )
+print( res.text )
