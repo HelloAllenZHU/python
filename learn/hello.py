@@ -188,7 +188,25 @@
 # xxx.A()
 
 #######################################http
-import requests
+# import requests
 
-res = requests.get( "https://www.baidu.com" )
-print( res.text )
+# # Get
+# res = requests.get( "https://www.baidu.com" )
+# print( res.content.decode('utf-8') )
+# print( res.status_code )
+
+# # 请求头
+# header = { 
+#     "Content-Type": "application/json" 
+# }
+
+# # 参数
+# json = {
+#     "mobile_phone": "15612345678",
+#     "pwd": "Test1234",
+#     "type": 0
+# }
+
+# Post
+# res = requests.post( url="https://www.baidu.com", json=json, headers=header )
+# print( res.json() )
