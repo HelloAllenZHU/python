@@ -1,3 +1,6 @@
 #!/usr/bin/python3
 
-print("Hello world")
+key = [1, 2, 3]
+d={}
+d[key] = 'a list'
+print(d)

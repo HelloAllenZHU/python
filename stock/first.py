@@ -16,7 +16,7 @@ pd.set_option('max_colwidth',1000)
 print(ts.__version__)
 
 # token
-token = 'df191c6281ef517ce65eedad01592cf08c7614e350706d630f848b7d'
+token = 'd541e8920dbb713d69005acf80e204efc7155152b25f977e1db66397'
 
 # 设置token
 ts.set_token( token )
