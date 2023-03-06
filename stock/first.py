@@ -55,7 +55,7 @@ df = pro.query( 'stock_basic',
 '''              
 
 # 获取某只股票指定日期内的基本数据(不包含换手率)
-df = pro.daily(ts_code='002174.SZ', start_date='20210524', end_date='20210527')
+df = pro.daily(ts_code='003032.SZ', start_date='20100101', end_date='20230306')
 
 
 #查询当前所有正常上市交易的股票列表
